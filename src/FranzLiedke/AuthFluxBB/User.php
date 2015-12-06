@@ -143,4 +143,8 @@ class User implements LaravelUser, SymfonyUser, CanResetPassword {
         unset($this->columns[$key]);
     }
 
+    public function getPublicFields() {
+        return array_only($this->columns, array('id', 'username'));
+    }
+
 }
