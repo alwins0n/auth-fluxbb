@@ -1,7 +1,5 @@
 <?php
 
 return array(
-
-	'path' => '/path/to/your/forum/',
-
+    'path' => '/path/to/your/forum/',
 );
